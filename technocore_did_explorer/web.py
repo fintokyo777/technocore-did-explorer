@@ -32,8 +32,8 @@ PAGE = """<!doctype html>
     --text: #18181b;
     --muted: #71717a;
     --faint: #a1a1aa;
-    --accent: #6366f1;
-    --accent-soft: #eef2ff;
+    --accent: #0a84ff;
+    --accent-soft: #e8f1ff;
     --ok: #16a34a;
     --ok-soft: #ecfdf5;
     --bad: #dc2626;
@@ -46,7 +46,7 @@ PAGE = """<!doctype html>
   @media (prefers-color-scheme: dark) {
     :root {
       --bg:#0b0b0f; --card:#16161c; --border:#26262e; --text:#fafafa;
-      --muted:#a1a1aa; --faint:#71717a; --accent:#818cf8; --accent-soft:#1e1b4b;
+      --muted:#a1a1aa; --faint:#71717a; --accent:#409cff; --accent-soft:#0a2a4d;
       --ok:#4ade80; --ok-soft:#052e16; --bad:#f87171; --bad-soft:#450a0a;
       --shadow: 0 1px 2px rgba(0,0,0,.5), 0 8px 30px rgba(0,0,0,.5);
     }
@@ -60,7 +60,7 @@ PAGE = """<!doctype html>
   .brand { display:flex; align-items:center; gap:.7rem; margin-bottom:2.4rem; }
   .logo {
     width:38px; height:38px; border-radius:11px; flex:0 0 auto;
-    background: linear-gradient(135deg, var(--accent), #a855f7);
+    background: linear-gradient(135deg, var(--accent), #0a4dff);
     display:grid; place-items:center; color:#fff; font-weight:700; font-size:1.1rem;
     box-shadow: var(--shadow);
   }

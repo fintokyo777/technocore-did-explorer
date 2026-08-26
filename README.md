@@ -1,3 +1,13 @@
+---
+title: Technocore DID Explorer
+emoji: 🔎
+colorFrom: blue
+colorTo: blue
+sdk: docker
+app_port: 7860
+short_description: Read-only Technocore did:key inspector — verify contribution proofs, scan activity, no private key needed.
+---
+
 # Technocore DID Explorer
 
 [![Tests](https://github.com/fintokyo777/technocore-did-explorer/actions/workflows/tests.yml/badge.svg)](https://github.com/fintokyo777/technocore-did-explorer/actions)
