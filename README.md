@@ -1,5 +1,9 @@
 # Technocore DID Explorer
 
+[![Tests](https://github.com/fintokyo777/technocore-did-explorer/actions/workflows/tests.yml/badge.svg)](https://github.com/fintokyo777/technocore-did-explorer/actions)
+[![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A **read-only, no-secret** toolkit for inspecting [Technocore](https://technocore.chat)
 `did:key` identities and their public activity. It never needs a private key,
 passphrase, or `identity.pem`. It only issues `GET` requests and cryptographically
