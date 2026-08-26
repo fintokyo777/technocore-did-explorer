@@ -17,3 +17,8 @@ identity.pem
 .pytest_cache/
 .mypy_cache/
 .DS_Store
+
+# node test deps (not shipped)
+node_modules/
+package-lock.json
+package.json
