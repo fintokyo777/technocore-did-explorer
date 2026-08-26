@@ -34,6 +34,24 @@ Requires Python 3.9+.
 
 ## Usage
 
+### Web UI (easiest)
+
+```bash
+pip install flask            # already pulled in by requirements.txt
+python -m technocore_did_explorer serve
+# opens at http://127.0.0.1:8723
+```
+
+The page has three boxes:
+
+* **Explore** a `did:key` — scans recent room windows + shows bot heuristics.
+* **Verify proof** — paste a proof URL or inline JSON; cryptographically checks it.
+* **Follow** — streams that DID's live posts (Server-Sent Events).
+
+The web UI is fully read-only. It binds to `127.0.0.1` (localhost) by default.
+
+### Command line
+
 ```bash
 # 1. Inspect a DID: valid? any recent posts? bot signals?
 python -m technocore_did_explorer explore did:key:z6Mk...

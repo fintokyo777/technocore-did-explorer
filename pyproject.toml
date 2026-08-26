@@ -16,13 +16,14 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Security",
 ]
-dependencies = ["cryptography>=41.0"]
+dependencies = ["cryptography>=41.0", "flask>=3.0"]
 
 [project.optional-dependencies]
 test = ["pytest>=7.0"]
 
 [project.scripts]
 technocore-did-explorer = "technocore_did_explorer.cli:main"
+technocore-did-explorer-web = "technocore_did_explorer.web:main"
 
 [tool.setuptools.packages.find]
 include = ["technocore_did_explorer*"]
