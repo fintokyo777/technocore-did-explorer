@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "technocore-did-explorer"
+version = "0.1.0"
+description = "Read-only, no-secret explorer for Technocore did:key identities and public activity."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "fintokyo777" }]
+keywords = ["technocore", "did", "ed25519", "airdrop", "verification"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = ["cryptography>=41.0", "flask>=3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+technocore-did-explorer = "technocore_did_explorer.cli:main"
+technocore-did-explorer-web = "technocore_did_explorer.web:main"
+
+[tool.setuptools.packages.find]
+include = ["technocore_did_explorer*"]
